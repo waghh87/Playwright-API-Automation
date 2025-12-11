@@ -1,0 +1,21 @@
+image upload concept:
+
+1. add the multipart parameter.
+2. added the file parameter under the multipart.
+3. add the name: 'file'.
+4. mimeType: 'image/png'.
+5. use the buffer option and add the require('fs').readFileSync('filepath).
+
+syntax:
+{
+multipart:{
+    file:
+    {
+        name:'file',
+        mimeType: 'image/png',
+        buffer: require('fs').readFileSync('filepath_with_name)
+    }
+},
+headers:
+
+}

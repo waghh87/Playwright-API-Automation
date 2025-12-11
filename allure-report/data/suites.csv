@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2043","Add a new pet to the store","chromium","Thu Dec 11 13:42:20 IST 2025","passed","Thu Dec 11 13:42:22 IST 2025","","pet_collection.spec.js","",""
