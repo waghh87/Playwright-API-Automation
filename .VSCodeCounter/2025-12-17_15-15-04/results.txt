@@ -1,0 +1,146 @@
+Date : 2025-12-17 15:15:04
+Directory : e:\delete\harshad\Playwright-API-Automation
+Total : 84 files,  2535 codes, 193 comments, 331 blanks, all 3059 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JavaScript         |         14 |      1,838 |        138 |        253 |      2,229 |
+| JSON               |         50 |        235 |          0 |          2 |        237 |
+| Markdown           |          5 |        225 |          0 |         32 |        257 |
+| HTML               |          4 |         88 |          0 |          4 |         92 |
+| PostCSS            |          4 |         54 |          6 |         12 |         72 |
+| YAML               |          2 |         52 |          1 |         10 |         63 |
+| TypeScript         |          3 |         41 |         48 |         18 |        107 |
+| JSON with Comments |          2 |          2 |          0 |          0 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                        | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                           |         84 |      2,535 |        193 |        331 |      3,059 |
+| . (Files)                                                                                                   |          5 |        250 |         79 |         25 |        354 |
+| .github                                                                                                     |          5 |        266 |          1 |         38 |        305 |
+| .github\agents                                                                                              |          3 |        214 |          0 |         28 |        242 |
+| .github\workflows                                                                                           |          2 |         52 |          1 |         10 |         63 |
+| allure-project                                                                                              |         32 |        687 |          4 |         56 |        747 |
+| allure-project (Files)                                                                                      |          3 |         37 |          4 |          1 |         42 |
+| allure-project\data                                                                                         |          5 |          5 |          0 |          0 |          5 |
+| allure-project\export                                                                                       |          1 |         10 |          0 |          1 |         11 |
+| allure-project\history                                                                                      |          5 |          5 |          0 |          0 |          5 |
+| allure-project\plugin                                                                                       |          4 |        616 |          0 |         54 |        670 |
+| allure-project\plugin\behaviors                                                                             |          1 |        256 |          0 |         21 |        277 |
+| allure-project\plugin\packages                                                                              |          1 |        141 |          0 |         20 |        161 |
+| allure-project\plugin\screen-diff                                                                           |          2 |        219 |          0 |         13 |        232 |
+| allure-project\widgets                                                                                      |         14 |         14 |          0 |          0 |         14 |
+| allure-report                                                                                               |         33 |        688 |          4 |         56 |        748 |
+| allure-report (Files)                                                                                       |          3 |         37 |          4 |          1 |         42 |
+| allure-report\data                                                                                          |          6 |          6 |          0 |          0 |          6 |
+| allure-report\data (Files)                                                                                  |          5 |          5 |          0 |          0 |          5 |
+| allure-report\data\test-cases                                                                               |          1 |          1 |          0 |          0 |          1 |
+| allure-report\export                                                                                        |          1 |         10 |          0 |          1 |         11 |
+| allure-report\history                                                                                       |          5 |          5 |          0 |          0 |          5 |
+| allure-report\plugin                                                                                        |          4 |        616 |          0 |         54 |        670 |
+| allure-report\plugin\behaviors                                                                              |          1 |        256 |          0 |         21 |        277 |
+| allure-report\plugin\packages                                                                               |          1 |        141 |          0 |         20 |        161 |
+| allure-report\plugin\screen-diff                                                                            |          2 |        219 |          0 |         13 |        232 |
+| allure-report\widgets                                                                                       |         14 |         14 |          0 |          0 |         14 |
+| allure-results                                                                                              |          1 |          1 |          0 |          0 |          1 |
+| e2e                                                                                                         |          2 |         15 |          4 |          8 |         27 |
+| specs                                                                                                       |          1 |          2 |          0 |          2 |          4 |
+| tests                                                                                                       |          3 |        302 |         45 |         56 |        403 |
+| tests-examples                                                                                              |          2 |        324 |         56 |         90 |        470 |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                    | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| e:\delete\harshad\Playwright-API-Automation\.github\agents\playwright-test-generator.agent.md               | Markdown           |         85 |          0 |         11 |         96 |
+| e:\delete\harshad\Playwright-API-Automation\.github\agents\playwright-test-healer.agent.md                  | Markdown           |         60 |          0 |          4 |         64 |
+| e:\delete\harshad\Playwright-API-Automation\.github\agents\playwright-test-planner.agent.md                 | Markdown           |         69 |          0 |         13 |         82 |
+| e:\delete\harshad\Playwright-API-Automation\.github\workflows\copilot-setup-steps.yml                       | YAML               |         25 |          1 |          9 |         35 |
+| e:\delete\harshad\Playwright-API-Automation\.github\workflows\playwright.yml                                | YAML               |         27 |          0 |          1 |         28 |
+| e:\delete\harshad\Playwright-API-Automation\README.md                                                       | Markdown           |          9 |          0 |          2 |         11 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\app.js                                           | JavaScript         |          1 |          1 |          0 |          2 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\data\behaviors.json                              | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\data\categories.json                             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\data\packages.json                               | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\data\suites.json                                 | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\data\timeline.json                               | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\export\mail.html                                 | HTML               |         10 |          0 |          1 |         11 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\history\categories-trend.json                    | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\history\duration-trend.json                      | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\history\history-trend.json                       | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\history\history.json                             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\history\retry-trend.json                         | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\index.html                                       | HTML               |         34 |          0 |          1 |         35 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\plugin\behaviors\index.js                        | JavaScript         |        256 |          0 |         21 |        277 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\plugin\packages\index.js                         | JavaScript         |        141 |          0 |         20 |        161 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\plugin\screen-diff\index.js                      | JavaScript         |        194 |          0 |          7 |        201 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\plugin\screen-diff\styles.css                    | PostCSS            |         25 |          0 |          6 |         31 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\styles.css                                       | PostCSS            |          2 |          3 |          0 |          5 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\behaviors.json                           | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\categories-trend.json                    | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\categories.json                          | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\duration-trend.json                      | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\duration.json                            | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\environment.json                         | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\executors.json                           | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\history-trend.json                       | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\launch.json                              | JSON with Comments |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\retry-trend.json                         | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\severity.json                            | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\status-chart.json                        | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\suites.json                              | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-project\widgets\summary.json                             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\app.js                                            | JavaScript         |          1 |          1 |          0 |          2 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\behaviors.json                               | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\categories.json                              | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\packages.json                                | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\suites.json                                  | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\test-cases\ed0459485b7b383c.json             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\data\timeline.json                                | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\export\mail.html                                  | HTML               |         10 |          0 |          1 |         11 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\history\categories-trend.json                     | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\history\duration-trend.json                       | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\history\history-trend.json                        | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\history\history.json                              | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\history\retry-trend.json                          | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\index.html                                        | HTML               |         34 |          0 |          1 |         35 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\plugin\behaviors\index.js                         | JavaScript         |        256 |          0 |         21 |        277 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\plugin\packages\index.js                          | JavaScript         |        141 |          0 |         20 |        161 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\plugin\screen-diff\index.js                       | JavaScript         |        194 |          0 |          7 |        201 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\plugin\screen-diff\styles.css                     | PostCSS            |         25 |          0 |          6 |         31 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\styles.css                                        | PostCSS            |          2 |          3 |          0 |          5 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\behaviors.json                            | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\categories-trend.json                     | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\categories.json                           | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\duration-trend.json                       | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\duration.json                             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\environment.json                          | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\executors.json                            | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\history-trend.json                        | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\launch.json                               | JSON with Comments |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\retry-trend.json                          | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\severity.json                             | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\status-chart.json                         | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\suites.json                               | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-report\widgets\summary.json                              | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\allure-results\11f20220-c754-459d-af7f-a13489f1774a-result.json | JSON               |          1 |          0 |          0 |          1 |
+| e:\delete\harshad\Playwright-API-Automation\e2e\example.spec.ts                                             | TypeScript         |         10 |          3 |          6 |         19 |
+| e:\delete\harshad\Playwright-API-Automation\e2e\seed.spec.ts                                                | TypeScript         |          5 |          1 |          2 |          8 |
+| e:\delete\harshad\Playwright-API-Automation\package-lock.json                                               | JSON               |        168 |          0 |          1 |        169 |
+| e:\delete\harshad\Playwright-API-Automation\package.json                                                    | JSON               |         19 |          0 |          1 |         20 |
+| e:\delete\harshad\Playwright-API-Automation\playwright.config.js                                            | JavaScript         |         28 |         35 |         11 |         74 |
+| e:\delete\harshad\Playwright-API-Automation\playwright.config.ts                                            | TypeScript         |         26 |         44 |         10 |         80 |
+| e:\delete\harshad\Playwright-API-Automation\specs\README.md                                                 | Markdown           |          2 |          0 |          2 |          4 |
+| e:\delete\harshad\Playwright-API-Automation\tests-examples\demo-todo-app.spec.js                            | JavaScript         |        314 |         52 |         84 |        450 |
+| e:\delete\harshad\Playwright-API-Automation\tests-examples\example.spec.js                                  | JavaScript         |         10 |          4 |          6 |         20 |
+| e:\delete\harshad\Playwright-API-Automation\tests\Store_collection.spec.js                                  | JavaScript         |         46 |          0 |          6 |         52 |
+| e:\delete\harshad\Playwright-API-Automation\tests\User_collection.spec.js                                   | JavaScript         |        134 |          3 |         28 |        165 |
+| e:\delete\harshad\Playwright-API-Automation\tests\pet_collection.spec.js                                    | JavaScript         |        122 |         42 |         22 |        186 |
+| Total                                                                                                       |                    |      2,535 |        193 |        331 |      3,059 |
++-------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
