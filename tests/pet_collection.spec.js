@@ -7,10 +7,10 @@ const{test , request, expect} = require ('@playwright/test');
  * Notes:
  * - Tests are largely independent but some reuse fixed IDs (1 and 2).
  * - Logging is used for demonstration and exploration; assertions are minimal.
+ * - File upload requires IMAGE_PATH environment variable to be set.
  */
 
-test('find by status API',async()=>
-{
+test('find by status API',async()=>{
     /**
      * Find pets by status ('sold').
      * Why: Validate basic GET with query params and JSON response parsing.
@@ -63,20 +63,37 @@ test('Add a new pet to the store',async({request})=>{
         console.log(resp_con_str);
 });
 
-test('Upload an image', async({request})=>
-{
+test('Upload an image', async({request})=>{
     /**
      * Upload an image for pet id 2 via multipart/form-data.
      * Why: Demonstrate file upload using a buffer.
-     * Note: Uses an absolute local path; adjust the file path for your environment.
+     * 
+     * IMPORTANT: Set IMAGE_PATH environment variable before running:
+     *   Windows: set IMAGE_PATH=C:\path\to\image.png
+     *   Mac/Linux: export IMAGE_PATH=/path/to/image.png
+     * 
+     * Then run: npx playwright test pet_collection.spec.js -g "Upload an image"
      */
+    const imagePath = process.env.IMAGE_PATH;
+    
+    if (!imagePath) {
+        console.log('SKIPPED: IMAGE_PATH environment variable not set. Set it before running this test.');
+        return;
+    }
+
+    const fs = require('fs');
+    if (!fs.existsSync(imagePath)) {
+        console.log(`SKIPPED: Image file not found at ${imagePath}`);
+        return;
+    }
+
     const up_request = await request.post("https://petstore.swagger.io/v2/pet/2/uploadImage",
         {
             multipart:{
                 file:{
                  name: 'file',
                  mimeType: 'image/png',   
-                 buffer: require('fs').readFileSync('F:\\GC Download\\Mademark x SpongeBob SquarePants - SpongeBob SquarePants Birthday Boy Funny Boys Birthday gift T-Shirt (1).png')   
+                 buffer: require('fs').readFileSync(imagePath)
                 }
             },
             headers: 'accept: application/json'
@@ -84,7 +101,6 @@ test('Upload an image', async({request})=>
         })
 
         const img_res = await up_request.json();
-        // const ima_con = JSON.stringify(img_res);
         console.log(img_res);
 });
 
@@ -122,8 +138,7 @@ test('update an existing pet',async({request})=>{
         console.log(upresp_con_str);
 });
 
-test('find pet by ID', async({request})=>
-{
+test('find pet by ID', async({request})=>{
     /**
      * Retrieve a pet by ID (1).
      * Why: Simple GET by resource identifier.
@@ -158,8 +173,7 @@ test('update the pet in the store with form data',async({request})=>{
         console.log(petcon);
 });     
 
-test('delete a pet', async({request})=>
-{
+test('delete a pet', async({request})=>{
     /**
      * Delete pet (id: 1).
      * Expectation: 404 (pet may not exist). Demonstrates negative assertion and
@@ -180,6 +194,5 @@ let del_res;
         }else{
         del_res = await delpet.text();
         }
-        // const del_con = JSON.stringify(del_res);
         console.log(del_res);
 });

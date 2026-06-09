@@ -19,9 +19,6 @@ test('Creates list of users', async ({ request }) => {
         })
 
     const user_response = await user_payload.json();
-    // const convet_user_response = JSON.stringify(user_response);
-    // console.log(convet_user_response);
-
     const msg = user_response.code;
     console.log(msg);
 
@@ -41,12 +38,12 @@ test('Get User by user name', async ({ request }) => {
             headers: 'accept: application/json'
         })
 
+    // Safe response parsing: detect content-type and parse accordingly
     let contentType = get_username.headers()['content-type'];
-
     let repo;
+    
     if (contentType && contentType.includes('application/json')) {
         repo = await get_username.json();
-
     } else {
         repo = await get_username.text();
     }
@@ -56,7 +53,11 @@ test('Get User by user name', async ({ request }) => {
 });
 
 test('Updated user', async ({ request }) => {
-    const updated_user = await request.put("https://petstore.swagger.io/v2/user/[]",
+    /**
+     * Update existing user by username.
+     * NOTE: URL was corrected from invalid /v2/user/[] to /v2/user/Gotu96
+     */
+    const updated_user = await request.put("https://petstore.swagger.io/v2/user/Gotu96",
         {
             data: {            
             id: 20000,
@@ -71,16 +72,16 @@ test('Updated user', async ({ request }) => {
         headers: 'accept: application/json'    
      })
 
-    let contentType = updated_user.headers()['content-Type'];
-
+    // Safe response parsing: fixed case sensitivity (content-Type → content-type)
+    let contentType = updated_user.headers()['content-type'];
     let update_respnse;
+    
     if(contentType && contentType.includes('application/json')){
-    update_respnse = await updated_user.json();
+        update_respnse = await updated_user.json();
+    } else {
+        update_respnse = await updated_user.text();
     }
-    else
-    {
-     update_respnse = await updated_user.text();
-    }
+    
     console.log(update_respnse);
 });
 
@@ -90,7 +91,16 @@ test('Delete user', async({request})=>{
             headers: 'accept: application/json'
         })
     
-    const delete_response = await delete_user.json();
+    // Safe response parsing
+    let contentType = delete_user.headers()['content-type'];
+    let delete_response;
+    
+    if(contentType && contentType.includes('application/json')){
+        delete_response = await delete_user.json();
+    } else {
+        delete_response = await delete_user.text();
+    }
+    
     console.log(delete_response);
 });
 
@@ -129,19 +139,27 @@ test('Log in user', async({request})=>{
     expect(login_user_response.code).toBe(200);
 });
 
-test('User Log out', async({request})=>
-{
+test('User Log out', async({request})=>{
     const logout = await request.get("https://petstore.swagger.io/v2/user/logout",
         {
 
         })
-    const logputresponse = await logout.json();
-    console.log(logputresponse);
+    
+    // Safe response parsing
+    let contentType = logout.headers()['content-type'];
+    let logoutresponse;
+    
+    if(contentType && contentType.includes('application/json')){
+        logoutresponse = await logout.json();
+    } else {
+        logoutresponse = await logout.text();
+    }
+    
+    console.log(logoutresponse);
 });
 
 
-test('Create user with Array', async({request})=>
-{
+test('Create user with Array', async({request})=>{
     const create_user_array = await request.post("https://petstore.swagger.io/v2/user/createWithArray",
         {
             data:
